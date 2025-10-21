@@ -49,32 +49,7 @@ export default function Involved() {
     }
   ]
 
-  const leadershipRoles = [
-    {
-      title: "President",
-      description: "Lead club meetings, coordinate with faculty, and represent HER at school events."
-    },
-    {
-      title: "Vice President",
-      description: "Support the president and take on leadership roles during meetings and events."
-    },
-    {
-      title: "Secretary",
-      description: "Keep meeting minutes, manage club communications, and maintain member records."
-    },
-    {
-      title: "Treasurer",
-      description: "Manage club funds, organize fundraising activities, and track expenses."
-    },
-    {
-      title: "Event Coordinator",
-      description: "Plan and organize club events, workshops, and community activities."
-    },
-    {
-      title: "Communications Director",
-      description: "Manage social media, create promotional materials, and handle publicity."
-    }
-  ]
+  // Removed unused leadershipRoles array
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#FFFBF3] to-[#FFF8D2]">
@@ -172,12 +147,12 @@ export default function Involved() {
                   </div>
                 </div>
                 <p className="text-center text-gray-600 text-sm mb-4">
-                  This money helps us organize more events to help promote the inclusion of women's rights.
+                  This money helps us organize more events to help promote the inclusion of women&apos;s rights.
                 </p>
                 <div className="text-center">
                   <p className="text-gray-700 font-semibold mb-2">Money can be accepted via Venmo to:</p>
                   <p className="text-[#EB89B5] font-bold text-lg">@Ameliefairweather7</p>
-                  <p className="text-gray-600 text-sm">Please specify "donation" in the message</p>
+                  <p className="text-gray-600 text-sm">Please specify &quot;donation&quot; in the message</p>
                 </div>
               </div>
             </div>
@@ -276,7 +251,7 @@ export default function Involved() {
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Ready to Make a Difference?</h2>
           <p className="text-lg text-gray-600 mb-6">
-            Join HER today and be part of the movement to ensure women's voices are heard in education.
+            Join HER today and be part of the movement to ensure women&apos;s voices are heard in education.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
