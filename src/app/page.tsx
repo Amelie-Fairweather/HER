@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import HeroTitle from '@/components/HeroTitle'
+// import HeroTitle from '@/components/HeroTitle' // Removed hearts and stars animation
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-[#EB89B5] text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <HeroTitle />
+          <h1 className="text-6xl font-bold mb-4">HER</h1>
           <h2 className="text-2xl font-semibold mb-2">Her Education Required</h2>
           <p className="text-lg opacity-90">
             Student-led club at CVU dedicated to addressing the lack of Women&apos;s history and current rights in the curriculum
