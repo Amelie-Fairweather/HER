@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
+// import emailjs from '@emailjs/browser' // Removed unused import
 
 interface JoinFormProps {
   onClose: () => void
@@ -95,7 +95,7 @@ Application submitted at: ${new Date().toLocaleString()}
             </button>
           </div>
           
-          <p className="text-gray-600 mb-6">We'd love to have you join our community!</p>
+          <p className="text-gray-600 mb-6">We&apos;d love to have you join our community!</p>
 
           {submitStatus === 'success' && (
             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
@@ -169,7 +169,7 @@ Application submitted at: ${new Date().toLocaleString()}
 
             <div>
               <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
-                Tell us about yourself and why you're interested in joining *
+                Tell us about yourself and why you&apos;re interested in joining *
               </label>
               <textarea
                 id="description"
@@ -196,7 +196,7 @@ Application submitted at: ${new Date().toLocaleString()}
                 className="mt-1 w-4 h-4 text-[#EB89B5] border-gray-300 rounded focus:ring-[#EB89B5] focus:ring-2"
               />
               <label htmlFor="emailUpdates" className="text-sm text-gray-700">
-                I'd like to receive weekly email updates from student members about ways I can help, upcoming events, and our progress
+                I&apos;d like to receive weekly email updates from student members about ways I can help, upcoming events, and our progress
               </label>
             </div>
 

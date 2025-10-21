@@ -10,7 +10,7 @@ export default function Home() {
           <HeroTitle />
           <h2 className="text-2xl font-semibold mb-2">Her Education Required</h2>
           <p className="text-lg opacity-90">
-            Student-led club at CVU dedicated to addressing the lack of Women's history and current rights in the curriculum
+            Student-led club at CVU dedicated to addressing the lack of Women&apos;s history and current rights in the curriculum
           </p>
         </div>
       </header>
@@ -32,10 +32,10 @@ export default function Home() {
                 Support our mission to implement a required Unit into the curriculum
               </h3>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
-                A required unit is absolutely essential to ensuring students have a well rounded understanding of American history. Today, students have no idea the struggle women faced and the work needed to overcome them. Lack of role models for young girls, lack of representation and lack of knowledge limits the inclusion and success of your daughters, mothers, sisters, etc. Furthermore, men lack this education too. How can students vote on new policies surrounding women's rights without basic understanding of them?
+                A required unit is absolutely essential to ensuring students have a well rounded understanding of American history. Today, students have no idea the struggle women faced and the work needed to overcome them. Lack of role models for young girls, lack of representation and lack of knowledge limits the inclusion and success of your daughters, mothers, sisters, etc. Furthermore, men lack this education too. How can students vote on new policies surrounding women&apos;s rights without basic understanding of them?
               </p>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto font-semibold">
-                To not require this education is to suggest women's history as secondary, as optional, as unimportant.
+                To not require this education is to suggest women&apos;s history as secondary, as optional, as unimportant.
               </p>
             </div>
           </div>

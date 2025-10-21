@@ -1,15 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
+// import emailjs from '@emailjs/browser' // Removed unused import
 
 interface RSVPFormProps {
-  eventId: number
   eventTitle: string
   onClose: () => void
 }
 
-export default function RSVPForm({ eventId, eventTitle, onClose }: RSVPFormProps) {
+export default function RSVPForm({ eventTitle, onClose }: RSVPFormProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
