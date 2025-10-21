@@ -16,6 +16,74 @@ export default function About() {
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-16">
+        {/* Resources Section */}
+        <section className="mb-16">
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Resources</h2>
+            <p className="text-lg text-gray-600 mb-8 text-center">
+              Explore our educational materials and curriculum plans for implementing women&apos;s history in schools.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* KUD Link */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-[#EB89B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-[#EB89B5] mb-3">KUD</h3>
+                <p className="text-gray-600 mb-4">Know, Understand, Do framework for women&apos;s history curriculum</p>
+                <a 
+                  href="https://docs.google.com/document/d/1LlC2wW0qCM31NDHau47mPvXDYUyXJ7EcpAMRVpobbR0/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#EB89B5] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-md hover:shadow-lg"
+                >
+                  View KUD
+                </a>
+              </div>
+
+              {/* Slideshow Link */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-[#EB89B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V1a1 1 0 011-1h2a1 1 0 011 1v22a1 1 0 01-1 1h-2a1 1 0 01-1-1V4M7 4V1a1 1 0 00-1-1H4a1 1 0 00-1 1v22a1 1 0 001 1h2a1 1 0 001-1V4m8 8h2m-2 4h2m-8-4h2m-2 4h2m-8-4h2m-2 4h2" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-[#EB89B5] mb-3">Women&apos;s History Slideshow</h3>
+                <p className="text-gray-600 mb-4">Educational presentation on women&apos;s history and rights</p>
+                <a 
+                  href="https://docs.google.com/presentation/d/18eRzSft1iVdo2hu4mtBnubxHUdXDKA5NT45-LJIFHcA/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#EB89B5] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-md hover:shadow-lg"
+                >
+                  View Slideshow
+                </a>
+              </div>
+
+              {/* Curriculum Plan Link */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-[#EB89B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-[#EB89B5] mb-3">Curriculum Plan</h3>
+                <p className="text-gray-600 mb-4">Comprehensive plan for implementing women&apos;s rights unit</p>
+                <a 
+                  href="https://docs.google.com/document/d/1x9kDm71fgmfgrRO6Xu8a89Ycijn3YvjuSPRUHFVf-Ic/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#EB89B5] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-md hover:shadow-lg"
+                >
+                  View Curriculum Plan
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Mission Section */}
         <section className="mb-16">
           <div className="bg-white rounded-lg shadow-lg p-8">
@@ -87,73 +155,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Resources Section */}
-        <section className="mb-16">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Resources</h2>
-            <p className="text-lg text-gray-600 mb-8 text-center">
-              Explore our educational materials and curriculum plans for implementing women&apos;s history in schools.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6">
-              {/* KUD Link */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-[#EB89B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-[#EB89B5] mb-3">KUD</h3>
-                <p className="text-gray-600 mb-4">Know, Understand, Do framework for women&apos;s history curriculum</p>
-                <a 
-                  href="https://docs.google.com/document/d/1LlC2wW0qCM31NDHau47mPvXDYUyXJ7EcpAMRVpobbR0/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-[#EB89B5] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-md hover:shadow-lg"
-                >
-                  View KUD
-                </a>
-              </div>
-
-              {/* Slideshow Link */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-[#EB89B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V1a1 1 0 011-1h2a1 1 0 011 1v22a1 1 0 01-1 1h-2a1 1 0 01-1-1V4M7 4V1a1 1 0 00-1-1H4a1 1 0 00-1 1v22a1 1 0 001 1h2a1 1 0 001-1V4m8 8h2m-2 4h2m-8-4h2m-2 4h2m-8-4h2m-2 4h2" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-[#EB89B5] mb-3">Women&apos;s History Slideshow</h3>
-                <p className="text-gray-600 mb-4">Educational presentation on women&apos;s history and rights</p>
-                <a 
-                  href="https://docs.google.com/presentation/d/18eRzSft1iVdo2hu4mtBnubxHUdXDKA5NT45-LJIFHcA/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-[#EB89B5] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-md hover:shadow-lg"
-                >
-                  View Slideshow
-                </a>
-              </div>
-
-              {/* Curriculum Plan Link */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-[#EB89B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-[#EB89B5] mb-3">Curriculum Plan</h3>
-                <p className="text-gray-600 mb-4">Comprehensive plan for implementing women&apos;s rights unit</p>
-                <a 
-                  href="https://docs.google.com/document/d/1x9kDm71fgmfgrRO6Xu8a89Ycijn3YvjuSPRUHFVf-Ic/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-[#EB89B5] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-md hover:shadow-lg"
-                >
-                  View Curriculum Plan
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Our Values Section */}
         <section className="mb-16">

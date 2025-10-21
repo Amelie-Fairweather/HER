@@ -83,6 +83,21 @@ export default function Involved() {
           </div>
         </div>
 
+        {/* Email Popup Notice */}
+        <div className="mb-8 p-6 bg-[#FFF8D2] border-2 border-[#EB89B5] rounded-lg max-w-4xl mx-auto">
+          <div className="text-center">
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <svg className="w-6 h-6 text-[#EB89B5]" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+              </svg>
+              <h3 className="text-xl font-bold text-[#EB89B5]">Important Reminder</h3>
+            </div>
+            <p className="text-lg text-[#EB89B5] font-semibold">
+              After filling out any form, please remember to hit <strong>SEND</strong> on the email popup to complete your submission!
+            </p>
+          </div>
+        </div>
+
         {/* How to Get Involved */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Ways to Get Involved</h2>
@@ -258,7 +273,7 @@ export default function Involved() {
             </svg>
             <div>
               <p className="text-[#EB89B5] font-semibold">
-                Please RSVP to upcoming event November 12th on the calendar!
+                Please RSVP to upcoming event November 12th on the calendar! Remember to hit <strong>SEND</strong> on the email popup.
               </p>
             </div>
           </div>

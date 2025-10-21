@@ -119,7 +119,9 @@ export default function Events() {
           {upcomingEvents.map((event) => (
             <div 
               key={event.id} 
-              className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
+              className={`bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow ${
+                event.title === "Event to Include Women in the Curriculum" ? "border-4 border-[#EB89B5]" : ""
+              }`}
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex-1">

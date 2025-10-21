@@ -99,7 +99,7 @@ export default function Home() {
             </svg>
             <div>
               <p className="text-[#EB89B5] font-semibold text-lg">
-                Please RSVP to upcoming event November 12th on the calendar!
+                Please RSVP to upcoming event November 12th on the calendar! Remember to hit <strong>SEND</strong> on the email popup.
               </p>
             </div>
           </div>
