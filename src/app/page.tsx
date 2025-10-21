@@ -1,103 +1,118 @@
-import Image from "next/image";
+import Link from 'next/link'
+import HeroTitle from '@/components/HeroTitle'
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-[#FFFBF3] to-[#FFF8D2]">
+      {/* Header */}
+      <header className="bg-[#EB89B5] text-white py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <HeroTitle />
+          <h2 className="text-2xl font-semibold mb-2">Her Education Required</h2>
+          <p className="text-lg opacity-90">
+            Student-led club at CVU dedicated to addressing the lack of Women's history and current rights in the curriculum
+          </p>
         </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="max-w-4xl mx-auto px-4 py-16">
+        {/* Support Our Mission Section in Heart Bubble */}
+        <div className="relative mb-12 flex justify-center">
+          <div className="relative bg-[#FFD7E9] rounded-full py-16 px-16 max-w-5xl shadow-lg">
+            {/* Heart decoration at top */}
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="#EB89B5" className="drop-shadow-md">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.### 78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            
+            <div className="text-center pt-6 pb-4">
+              <h3 className="text-3xl font-bold text-[#EB89B5] mb-6">
+                Support our mission to implement a required Unit into the curriculum
+              </h3>
+              <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
+                A required unit is absolutely essential to ensuring students have a well rounded understanding of American history. Today, students have no idea the struggle women faced and the work needed to overcome them. Lack of role models for young girls, lack of representation and lack of knowledge limits the inclusion and success of your daughters, mothers, sisters, etc. Furthermore, men lack this education too. How can students vote on new policies surrounding women's rights without basic understanding of them?
+              </p>
+              <p className="text-lg text-gray-700 max-w-3xl mx-auto font-semibold">
+                To not require this education is to suggest women's history as secondary, as optional, as unimportant.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Buttons */}
+        <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          {/* About Us Button */}
+          <Link href="/about" className="group">
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-[#EB89B5]">
+              <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#EB89B5] transition-colors">
+                <svg className="w-8 h-8 text-[#EB89B5] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">About Us</h3>
+              <p className="text-gray-600 group-hover:text-gray-700">
+                Learn about our mission, values, and the passionate students behind HER.
+              </p>
+            </div>
+          </Link>
+
+          {/* Upcoming Events Button */}
+          <Link href="/events" className="group">
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-[#EB89B5]">
+              <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#EB89B5] transition-colors">
+                <svg className="w-8 h-8 text-[#EB89B5] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Upcoming Events</h3>
+              <p className="text-gray-600 group-hover:text-gray-700">
+                Stay updated on our meetings, workshops, and community events.
+              </p>
+            </div>
+          </Link>
+
+          {/* Get Involved Button */}
+          <Link href="/involved" className="group">
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-[#EB89B5]">
+              <div className="w-16 h-16 bg-[#FFD7E9] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#EB89B5] transition-colors">
+                <svg className="w-8 h-8 text-[#EB89B5] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Get Involved</h3>
+              <p className="text-gray-600 group-hover:text-gray-700">
+                Join our community and help us make a difference in education.
+              </p>
+            </div>
+          </Link>
+        </div>
+
+        {/* RSVP Notice */}
+        <div className="my-16 p-8 bg-[#FFD7E9] border-l-4 border-[#EB89B5] rounded-r-lg max-w-4xl mx-auto">
+          <div className="flex items-center gap-4">
+            <svg className="w-7 h-7 text-[#EB89B5]" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+            </svg>
+            <div>
+              <p className="text-[#EB89B5] font-semibold text-lg">
+                Please RSVP to upcoming event November 12th on the calendar!
+              </p>
+            </div>
+          </div>
+        </div>
+
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="bg-[#FFF8D2] text-gray-800 py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-gray-700">
+            © 2024 HER - Her Education Required | CVU Student Club
+          </p>
+        </div>
       </footer>
     </div>
-  );
+  )
 }

@@ -1,26 +1,100 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-  --background: #ffffff;
+  --medium-pink: #EB89B5;
+  --light-pink: #FFD7E9;
+  --very-light-cream: #FFFBF3;
+  --light-yellow-cream: #FFF8D2;
+  --pale-yellow: #FFF2AF;
+  --background: var(--very-light-cream);
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-medium-pink: var(--medium-pink);
+  --color-light-pink: var(--light-pink);
+  --color-very-light-cream: var(--very-light-cream);
+  --color-light-yellow-cream: var(--light-yellow-cream);
+  --color-pale-yellow: var(--pale-yellow);
+  --font-sans: 'Lora', serif;
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lora', serif;
+}
+
+/* Hero title animations */
+@keyframes float-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(0.5) rotate(0deg);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1) rotate(90deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-120px) scale(0.3) rotate(360deg);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-title {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero-title:hover {
+  transform: scale(1.05);
+}
+
+.hero-emoji {
+  position: absolute;
+  font-size: 1.5rem;
+  pointer-events: none;
+  animation: float-up 2s ease-out forwards;
+}
+
+.heart {
+  animation: float-up 2s ease-out forwards;
+}
+
+.star {
+  animation: float-up 2s ease-out forwards;
+}
+
+.sparkle-effect {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #FFF2AF;
+  border-radius: 50%;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.sparkle-effect:nth-child(odd) {
+  animation-delay: 0.3s;
+}
+
+.sparkle-effect:nth-child(even) {
+  animation-delay: 0.6s;
 }
