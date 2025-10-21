@@ -111,7 +111,7 @@ export default function Events() {
     const cardCenterY = (rect.top - containerRect.top) + (rect.height / 2)
 
     // Create hearts and stars starting from the center of the special event card
-    const newEmojis: Array<{id: number, type: string, x: number, y: number}> = []
+    const newEmojis: Array<{id: number, type: 'heart' | 'star', x: number, y: number}> = []
     
     // Create many emojis from the center of the card
     for (let i = 0; i < 25; i++) {
