@@ -66,6 +66,23 @@ export default function Involved() {
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-16">
+        {/* Petition Notice */}
+        <div className="mb-16 p-8 bg-white border-4 border-[#EB89B5] rounded-lg shadow-lg max-w-4xl mx-auto">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-[#EB89B5] mb-4">
+              SHOW YOUR SUPPORT BY SIGNING OUR PETITION IN SUPPORT OF EDUCATION
+            </h2>
+            <a 
+              href="https://docs.google.com/document/d/1VGe4JnrzEtrg9oV6BK7Taaub3hooeU8LjgWIXgC7gNk/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#EB89B5] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-lg hover:shadow-xl"
+            >
+              Sign Our Petition
+            </a>
+          </div>
+        </div>
+
         {/* How to Get Involved */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Ways to Get Involved</h2>
