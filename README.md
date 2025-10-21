@@ -1,3 +1,7 @@
+# HER Club Website
+
+A website for the HER (Her Education Required) club at CVU, featuring event RSVPs, member applications, and information about women's history education advocacy.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
