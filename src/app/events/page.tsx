@@ -298,7 +298,6 @@ export default function Events() {
       {/* RSVP Form Modal */}
       {showRSVPForm && selectedEvent && (
         <RSVPForm
-          eventId={selectedEvent.id}
           eventTitle={selectedEvent.title}
           onClose={handleCloseRSVP}
         />
