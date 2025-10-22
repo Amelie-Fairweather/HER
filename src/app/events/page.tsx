@@ -12,7 +12,7 @@ export default function Events() {
     {
       id: 1,
       title: "Weekly HER Club Meeting",
-      date: "November 6, 2024",
+      date: "November 6, 2025",
       time: "10:00 AM - 10:30 AM",
       location: "CVU Room 134",
       description: "Regular club meeting to discuss upcoming initiatives and plan future events.",
@@ -22,7 +22,7 @@ export default function Events() {
     {
       id: 2,
       title: "Weekly HER Club Meeting",
-      date: "November 13, 2024",
+      date: "November 13, 2025",
       time: "10:00 AM - 10:30 AM",
       location: "CVU Room 134",
       description: "Regular club meeting to discuss upcoming initiatives and plan future events.",
@@ -32,10 +32,10 @@ export default function Events() {
     {
       id: 3,
       title: "Event to Include Women in the Curriculum",
-      date: "November 12, 2024",
+      date: "November 12, 2025",
       time: "5:30 PM - 8:00 PM",
       location: "Pierson Library",
-      description: "Join us for this important event focused on including more women&apos;s history and perspectives in our curriculum. This will be catered by Folino&apos;s.",
+      description: "Join us for this important event focused on including more women history and perspectives in our curriculum. This will be catered by Folinos.",
       type: "Special Event",
       rsvpRequired: true,
       catering: "Catered by Folino's"
@@ -63,7 +63,7 @@ export default function Events() {
     {
       id: 6,
       title: "Weekly HER Club Meeting",
-      date: "December 4, 2024",
+      date: "December 4, 2025",
       time: "10:00 AM - 10:30 AM",
       location: "CVU Room 134",
       description: "Regular club meeting to discuss upcoming initiatives and plan future events.",
