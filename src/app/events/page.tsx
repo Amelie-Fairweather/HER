@@ -43,7 +43,7 @@ export default function Events() {
     {
       id: 4,
       title: "Weekly HER Club Meeting",
-      date: "November 20, 2024",
+      date: "November 20, 2025",
       time: "10:00 AM - 10:30 AM",
       location: "CVU Room 134",
       description: "Regular club meeting to discuss upcoming initiatives and plan future events.",
@@ -53,7 +53,7 @@ export default function Events() {
     {
       id: 5,
       title: "Weekly HER Club Meeting",
-      date: "November 27, 2024",
+      date: "November 27, 2025",
       time: "10:00 AM - 10:30 AM",
       location: "CVU Room 134",
       description: "Regular club meeting to discuss upcoming initiatives and plan future events.",
