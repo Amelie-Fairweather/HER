@@ -73,10 +73,10 @@ export default function Home() {
               
               <div className="text-center pt-6 pb-4">
                 <h3 className="text-3xl font-bold text-[#EB89B5] mb-6">
-                  Support our mission to implement a required Unit into the curriculum
+                  Support our mission to implement a required unit into the curriculum
                 </h3>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
-                  A required unit is absolutely essential to ensuring students have a well rounded understanding of American history. Today, students have no idea the struggle women faced and the work needed to overcome them. Lack of role models for young girls, lack of representation and lack of knowledge limits the inclusion and success of your daughters, mothers, sisters, etc. Furthermore, men lack this education too. How can students vote on new policies surrounding women&apos;s rights without basic understanding of them?
+                  A required unit is absolutely essential to ensuring students have a well-rounded understanding of American history. Today, students have no idea the struggle women faced and the work needed to overcome them. Lack of role models for young girls, lack of representation, and lack of knowledge limits the inclusion and success of your daughters, mothers, sisters, etc. Furthermore, men lack this education too. How can students vote on new policies surrounding women&apos;s rights without basic understanding of them?
                 </p>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto font-semibold">
                   To not require this education is to suggest women&apos;s history as secondary, as optional, as unimportant.

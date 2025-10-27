@@ -35,7 +35,7 @@ export default function Events() {
       date: "November 12, 2025",
       time: "5:30 PM - 8:00 PM",
       location: "Pierson Library",
-      description: "Join us for this important event focused on including more women history and perspectives in our curriculum. This will be catered by Folinos.",
+      description: "Join us for this important event focused on including more women's history and perspectives in our curriculum. This will be catered by Folino's.",
       type: "Special Event",
       rsvpRequired: true,
       catering: "Catered by Folino's"

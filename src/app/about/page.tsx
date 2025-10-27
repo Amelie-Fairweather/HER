@@ -94,7 +94,7 @@ export default function About() {
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
               We believe that education should reflect the full spectrum of human experience, including 
-              the stories, struggles, and achievements of women throughout history and in contemporary society. Our goal is to foster an environment where students are informed and understanding of 50% of the population. Women have to long been made to feel secondary, unimportant, and not equal to men. We want to change that.
+              the stories, struggles, and achievements of women throughout history and in contemporary society. Our goal is to foster an environment where students are informed and understanding of 50% of the population. Women have too long been made to feel secondary, unimportant, and not equal to men. We want to change that.
             </p>
           </div>
         </section>
@@ -111,7 +111,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Curriculum Advocacy</h3>
               <p className="text-gray-600">
-               Now is the time to advocate for a required unit in teh currciulumn, club members have met with the curriculumn director, principal, super intendent, teacher, etc. Also presneted to midddle schools, freshman and sophmore classes, to attempt to remedy the lack of education.
+               Now is the time to advocate for a required unit in the curriculum. Club members have met with the curriculum director, principal, superintendent, teachers, etc. Also presented to middle schools, freshman and sophomore classes, to attempt to remedy the lack of education.
               </p>
             </div>
 
@@ -124,7 +124,7 @@ export default function About() {
               <h3 className="text-xl font-bold text-gray-800 mb-3">Educational Events</h3>
               <p className="text-gray-600">
                 Host workshops, speaker series, and educational events to raise awareness about 
-                women&apos;s rights and historical contributions. We recently fundraised over $600 dollars to host a huge event in the shelburne library.
+                women's rights and historical contributions. We recently fundraised over $600 to host a huge event in the Shelburne library.
               </p>
             </div>
 
@@ -136,7 +136,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">The club!</h3>
               <p className="text-gray-600">
-                our club is entirely student led, with members from all grades, dedicated to tecahing womens history. We will continue to advocate and fight until this education is required!
+                Our club is entirely student-led, with members from all grades, dedicated to teaching women's history. We will continue to advocate and fight until this education is required!
               </p>
             </div>
 
