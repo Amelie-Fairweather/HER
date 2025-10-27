@@ -124,7 +124,7 @@ export default function About() {
               <h3 className="text-xl font-bold text-gray-800 mb-3">Educational Events</h3>
               <p className="text-gray-600">
                 Host workshops, speaker series, and educational events to raise awareness about 
-                women's rights and historical contributions. We recently fundraised over $600 to host a huge event in the Shelburne library.
+                women&apos;s rights and historical contributions. We recently fundraised over $600 to host a huge event in the Shelburne library.
               </p>
             </div>
 
@@ -136,7 +136,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">The club!</h3>
               <p className="text-gray-600">
-                Our club is entirely student-led, with members from all grades, dedicated to teaching women's history. We will continue to advocate and fight until this education is required!
+                Our club is entirely student-led, with members from all grades, dedicated to teaching women&apos;s history. We will continue to advocate and fight until this education is required!
               </p>
             </div>
 
