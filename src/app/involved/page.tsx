@@ -19,7 +19,7 @@ export default function Involved() {
     },
     {
       title: "Volunteer at Events",
-      description: "Help us organize and run our events, workshops, and community activities. Check the upcoming events and RSVP! ",
+      description: "Help us organize and run our events, workshops, and community activities. Check the upcoming events! ",
       icon: (
         <svg className="w-8 h-8 text-[#EB89B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -265,7 +265,7 @@ export default function Involved() {
           </div>
         </section>
 
-        {/* RSVP Notice */}
+        {/* Petition Notice */}
         <div className="mb-12 p-4 md:p-6 bg-[#FFD7E9] border-l-4 border-[#EB89B5] rounded-r-lg">
           <div className="flex items-center gap-2 md:gap-3">
             <svg className="w-5 h-5 md:w-6 md:h-6 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -273,7 +273,7 @@ export default function Involved() {
             </svg>
             <div>
               <p className="text-[#EB89B5] font-semibold text-sm md:text-base">
-                Please RSVP to upcoming event November 12th on the calendar! Remember to hit <strong>SEND</strong> on the email popup.
+                Please sign our petition in support of education! Scroll up to find the petition button at the top of this page.
               </p>
             </div>
           </div>

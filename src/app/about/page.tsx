@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function About() {
   return (
@@ -79,6 +80,79 @@ export default function About() {
                 >
                   View Curriculum Plan
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Event Images Collage */}
+        <section className="mb-16">
+          <div className="bg-white rounded-lg shadow-lg p-4 md:p-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+              {/* Event 2 */}
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <Image
+                  src="/event2.jpg"
+                  alt="HER Club event photo"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              </div>
+              
+              {/* Event 3 */}
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <Image
+                  src="/event3.JPG"
+                  alt="HER Club event photo"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              </div>
+              
+              {/* Event 4 */}
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <Image
+                  src="/event4.jpg"
+                  alt="HER Club event photo"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              </div>
+              
+              {/* Event 5 */}
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <Image
+                  src="/event5.jpg"
+                  alt="HER Club event photo"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              </div>
+              
+              {/* Event 6 */}
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <Image
+                  src="/event6.jpg"
+                  alt="HER Club event photo"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              </div>
+              
+              {/* Event 7 */}
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow md:col-span-1">
+                <Image
+                  src="/event7.jpg"
+                  alt="HER Club event photo"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
               </div>
             </div>
           </div>

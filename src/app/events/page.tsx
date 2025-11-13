@@ -37,8 +37,19 @@ export default function Events() {
       location: "Pierson Library",
       description: "Join us for this important event focused on including more women's history and perspectives in our curriculum. This will be catered by Folino's.",
       type: "Special Event",
-      rsvpRequired: true,
+      rsvpRequired: false,
+      eventRecap: true,
       catering: "Catered by Folino's"
+    },
+    {
+      id: 7,
+      title: "Social Studies Presentation",
+      date: "November 19, 2025",
+      time: "3:00 PM - 3:30 PM",
+      location: "CVU",
+      description: "Club members will be presenting survey results and discussing implementation.",
+      type: "Special Event",
+      rsvpRequired: false
     },
     {
       id: 4,
@@ -64,6 +75,26 @@ export default function Events() {
       id: 6,
       title: "Weekly HER Club Meeting",
       date: "December 4, 2025",
+      time: "10:00 AM - 10:30 AM",
+      location: "CVU Room 134",
+      description: "Regular club meeting to discuss upcoming initiatives and plan future events.",
+      type: "Club Meeting",
+      rsvpRequired: false
+    },
+    {
+      id: 8,
+      title: "Weekly HER Club Meeting",
+      date: "December 11, 2025",
+      time: "10:00 AM - 10:30 AM",
+      location: "CVU Room 134",
+      description: "Regular club meeting to discuss upcoming initiatives and plan future events.",
+      type: "Club Meeting",
+      rsvpRequired: false
+    },
+    {
+      id: 9,
+      title: "Weekly HER Club Meeting",
+      date: "December 18, 2025",
       time: "10:00 AM - 10:30 AM",
       location: "CVU Room 134",
       description: "Regular club meeting to discuss upcoming initiatives and plan future events.",
@@ -114,7 +145,7 @@ export default function Events() {
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-8 md:py-16">
-        {/* RSVP Reminder */}
+        {/* Petition Notice */}
         <div className="mb-8 p-4 md:p-6 bg-[#FFD7E9] border-l-4 border-[#EB89B5] rounded-r-lg max-w-4xl mx-auto">
           <div className="flex items-center gap-3 md:gap-4">
             <svg className="w-6 h-6 md:w-7 md:h-7 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -122,7 +153,7 @@ export default function Events() {
             </svg>
             <div>
               <p className="text-[#EB89B5] font-semibold text-sm md:text-lg">
-                Please RSVP to the special event on November 12th! Remember to hit <strong>SEND</strong> on the email popup.
+                Please sign our petition in support of education! Visit the <Link href="/involved" className="underline hover:text-[#C76B99]">Get Involved</Link> page to show your support.
               </p>
             </div>
           </div>
@@ -134,7 +165,7 @@ export default function Events() {
             <div 
               key={event.id} 
               className={`bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow ${
-                event.title === "Event to Include Women in the Curriculum" ? "border-4 border-[#EB89B5]" : ""
+                event.title === "Event to Include Women in the Curriculum" || event.title === "Social Studies Presentation" ? "border-4 border-[#EB89B5]" : ""
               }`}
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -174,14 +205,14 @@ export default function Events() {
                 </div>
               </div>
               
-              {event.rsvpRequired && (
+              {event.eventRecap && (
                 <div className="mt-4">
-                  <button
-                    onClick={() => handleRSVPClick(event.id, event.title)}
-                    className="bg-[#EB89B5] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-md hover:shadow-lg"
+                  <Link
+                    href="/events/recap"
+                    className="inline-block bg-[#EB89B5] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-md hover:shadow-lg"
                   >
-                    RSVP - I Can Go!
-                  </button>
+                    EVENT RECAP!
+                  </Link>
                 </div>
               )}
             </div>
@@ -200,29 +231,6 @@ export default function Events() {
             <p className="text-gray-500">Check back soon for new events and activities!</p>
           </div>
         )}
-
-        {/* Event Categories Legend */}
-        <div className="mt-12 bg-white rounded-lg shadow-lg p-6">
-          <h3 className="text-lg font-bold text-gray-800 mb-4">Event Types</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-pink-100 rounded-full"></div>
-              <span className="text-sm text-gray-600">Special Event</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-purple-100 rounded-full"></div>
-              <span className="text-sm text-gray-600">Club Meeting</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-blue-100 rounded-full"></div>
-              <span className="text-sm text-gray-600">Panel Discussion</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-green-100 rounded-full"></div>
-              <span className="text-sm text-gray-600">Workshop</span>
-            </div>
-          </div>
-        </div>
 
         {/* Call to Action */}
         <div className="text-center mt-12">

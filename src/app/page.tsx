@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 // import HeroTitle from '@/components/HeroTitle' // Removed hearts and stars animation
 
 export default function Home() {
@@ -19,6 +20,20 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 pt-0 pb-16">
+        {/* Petition Notice at Top */}
+        <div className="mt-8 mb-12 p-5 md:p-7 bg-[#FFD7E9] border-l-4 border-[#EB89B5] rounded-r-lg max-w-4xl mx-auto">
+          <div className="flex items-center gap-3 md:gap-4">
+            <svg className="w-6 h-6 md:w-7 md:h-7 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+            </svg>
+            <div>
+              <p className="text-[#EB89B5] font-semibold text-sm md:text-lg">
+                Please sign our petition in support of education! Visit the <Link href="/involved" className="underline hover:text-[#C76B99]">Get Involved</Link> page to show your support.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Mission Section with Surrounding Statistics */}
         <div className="mb-16 max-w-7xl mx-auto">
           {/* Statistics Bubbles Around Mission */}
@@ -26,7 +41,7 @@ export default function Home() {
             {/* Top Statistics Row */}
             <div className="flex flex-row justify-center mt-9 mb-12 max-w-6xl mx-auto gap-2 md:gap-6 overflow-x-auto px-2 md:px-0">
               {/* Left Statistic */}
-              <div className="w-[calc(33.333%-0.5rem)] md:w-80 flex-shrink-0">
+              <div className="min-w-[260px] md:w-80 flex-shrink-0">
                 <div className="bg-white rounded-2xl p-3 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-40 md:h-48 flex items-center">
                   <div className="text-center w-full">
                     <div className="text-2xl md:text-4xl font-bold text-[#EB89B5] mb-2 md:mb-3">85%</div>
@@ -38,7 +53,7 @@ export default function Home() {
               </div>
 
               {/* Middle Statistic */}
-              <div className="w-[calc(33.333%-0.5rem)] md:w-80 flex-shrink-0">
+              <div className="min-w-[260px] md:w-80 flex-shrink-0">
                 <div className="bg-white rounded-2xl p-3 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-40 md:h-48 flex items-center">
                   <div className="text-center w-full">
                     <div className="text-2xl md:text-4xl font-bold text-[#EB89B5] mb-2 md:mb-3">90%</div>
@@ -50,7 +65,7 @@ export default function Home() {
               </div>
 
               {/* Right Statistic */}
-              <div className="w-[calc(33.333%-0.5rem)] md:w-80 flex-shrink-0">
+              <div className="min-w-[260px] md:w-80 flex-shrink-0">
                 <div className="bg-white rounded-2xl p-3 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-40 md:h-48 flex items-center">
                   <div className="text-center w-full">
                     <div className="text-2xl md:text-4xl font-bold text-[#EB89B5] mb-2 md:mb-3">81%</div>
@@ -134,18 +149,19 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* RSVP Notice */}
-        <div className="my-16 p-4 md:p-8 bg-[#FFD7E9] border-l-4 border-[#EB89B5] rounded-r-lg max-w-4xl mx-auto">
-          <div className="flex items-center gap-3 md:gap-4">
-            <svg className="w-6 h-6 md:w-7 md:h-7 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-            </svg>
-            <div>
-              <p className="text-[#EB89B5] font-semibold text-sm md:text-lg">
-                Please RSVP to upcoming event November 12th on the calendar! Remember to hit <strong>SEND</strong> on the email popup.
-              </p>
-            </div>
-          </div>
+        {/* Event Image */}
+        <div className="my-12 md:my-16 max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#EB89B5] text-center mb-8 md:mb-10">
+            OUR CLUB THANKS YOU FOR YOUR SUPPORT!
+          </h2>
+          <Image
+            src="/event1.JPG"
+            alt="HER Club event - students on stage"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-lg object-cover shadow-lg"
+            style={{ aspectRatio: '4/3' }}
+          />
         </div>
 
       </main>
