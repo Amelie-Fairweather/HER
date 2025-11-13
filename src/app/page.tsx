@@ -39,13 +39,13 @@ export default function Home() {
           {/* Statistics Bubbles Around Mission */}
           <div className="relative">
             {/* Top Statistics Row */}
-            <div className="flex flex-row justify-center mt-9 mb-12 max-w-6xl mx-auto gap-2 md:gap-6 overflow-x-auto px-2 md:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-center mt-9 mb-12 max-w-6xl mx-auto gap-4 md:gap-6 px-4 md:px-0">
               {/* Left Statistic */}
-              <div className="min-w-[260px] md:w-80 flex-shrink-0">
-                <div className="bg-white rounded-2xl p-3 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-40 md:h-48 flex items-center">
+              <div className="w-full">
+                <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-[200px] md:h-[240px] flex items-center">
                   <div className="text-center w-full">
                     <div className="text-2xl md:text-4xl font-bold text-[#EB89B5] mb-2 md:mb-3">85%</div>
-                    <p className="text-[10px] md:text-sm text-gray-700 font-semibold px-1 md:px-4 leading-tight">
+                    <p className="text-xs md:text-sm text-gray-700 font-semibold px-1 md:px-4 leading-tight">
                       of students grades 9-12 did not know what the suffrage movement was, Title 7 or 8 or ERA, pay and gender gap, or what year women gained the right to vote.
                     </p>
                   </div>
@@ -53,11 +53,11 @@ export default function Home() {
               </div>
 
               {/* Middle Statistic */}
-              <div className="min-w-[260px] md:w-80 flex-shrink-0">
-                <div className="bg-white rounded-2xl p-3 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-40 md:h-48 flex items-center">
+              <div className="w-full">
+                <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-[200px] md:h-[240px] flex items-center">
                   <div className="text-center w-full">
                     <div className="text-2xl md:text-4xl font-bold text-[#EB89B5] mb-2 md:mb-3">90%</div>
-                    <p className="text-[10px] md:text-sm text-gray-700 font-semibold px-1 md:px-4 leading-tight">
+                    <p className="text-xs md:text-sm text-gray-700 font-semibold px-1 md:px-4 leading-tight">
                       of students grades 9-12 said they had received no education around women&apos;s rights from school.
                     </p>
                   </div>
@@ -65,11 +65,11 @@ export default function Home() {
               </div>
 
               {/* Right Statistic */}
-              <div className="min-w-[260px] md:w-80 flex-shrink-0">
-                <div className="bg-white rounded-2xl p-3 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-40 md:h-48 flex items-center">
+              <div className="w-full">
+                <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg shadow-[#EB89B5]/20 transform hover:scale-110 transition-transform duration-300 h-[200px] md:h-[240px] flex items-center">
                   <div className="text-center w-full">
                     <div className="text-2xl md:text-4xl font-bold text-[#EB89B5] mb-2 md:mb-3">81%</div>
-                    <p className="text-[10px] md:text-sm text-gray-700 font-semibold px-1 md:px-4 leading-tight">
+                    <p className="text-xs md:text-sm text-gray-700 font-semibold px-1 md:px-4 leading-tight">
                       of students grades 9-12 reported they had experienced sexism.
                     </p>
                   </div>
