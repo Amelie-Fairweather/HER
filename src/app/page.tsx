@@ -8,7 +8,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-[#EB89B5] text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 transition-transform duration-500 hover:scale-150 focus:scale-150 active:scale-140 cursor-pointer transform-gpu ease-out">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 transition-transform duration-500 hover:scale-150 focus:scale-150 active:scale-140 cursor-pointer transform-gpu ease-out coiny-regular">
             HER
           </h1>
           <h2 className="text-2xl font-semibold mb-2">Her Education Required</h2>

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import JoinForm from '@/components/JoinForm'
 
@@ -83,48 +84,118 @@ export default function Involved() {
           </div>
         </div>
 
-        {/* Email Popup Notice */}
-        <div className="mb-8 p-4 md:p-6 bg-[#FFF8D2] border-2 border-[#EB89B5] rounded-lg max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="flex items-center justify-center gap-2 md:gap-3 mb-2">
-              <svg className="w-5 h-5 md:w-6 md:h-6 text-[#EB89B5]" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-              <h3 className="text-lg md:text-xl font-bold text-[#EB89B5]">Important Reminder</h3>
-            </div>
-            <p className="text-sm md:text-lg text-[#EB89B5] font-semibold">
-              After filling out any form, please remember to hit <strong>SEND</strong> on the email popup to complete your submission!
-            </p>
-          </div>
-        </div>
-
         {/* How to Get Involved */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 md:mb-8 text-center">Ways to Get Involved</h2>
-          <div className="grid grid-cols-2 gap-3 md:gap-8">
-            {involvementOptions.map((option, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#FFD7E9] rounded-full flex items-center justify-center flex-shrink-0">
-                    {option.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-800 mb-2">{option.title}</h3>
-                    <p className="text-gray-600 mb-4">{option.description}</p>
-                    <ul className="space-y-1">
-                      {option.benefits.map((benefit, benefitIndex) => (
-                        <li key={benefitIndex} className="text-sm text-gray-500 flex items-center gap-2">
-                          <svg className="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                          {benefit}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            {/* Students Box */}
+            <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow">
+              <h3 className="text-2xl font-bold text-[#EB89B5] mb-4">For Students</h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-lg font-bold text-gray-800 mb-2">Join Our Club</h4>
+                  <p className="text-gray-600 mb-3">Become an official HER member and participate in regular meetings and activities. This is open to ALL CVU students, room 134 on Wednesdays!!</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li className="flex items-center gap-2">
+                      <svg className="w-4 h-4 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Regular club meetings
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg className="w-4 h-4 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      YOUR SUPPORT IS CRUCIAL TO OUR CAUSE
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-800 mb-2">Volunteer at Events</h4>
+                  <p className="text-gray-600 mb-3">Help us organize and run our events, workshops, and community activities. Check the upcoming events!</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li className="flex items-center gap-2">
+                      <svg className="w-4 h-4 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Event planning experience
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg className="w-4 h-4 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Fundraising experience
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg className="w-4 h-4 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Networking opportunities
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg className="w-4 h-4 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Skill development
+                    </li>
+                  </ul>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* Adults Box */}
+            <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow">
+              <h3 className="text-2xl font-bold text-[#EB89B5] mb-4">For Adults</h3>
+              <div className="space-y-3">
+                <p className="text-gray-600">There are many ways you can support our cause:</p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-[#EB89B5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span>Sign the petition</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-[#EB89B5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <div>
+                      <span>Write emails to state representatives, senators and Becca Balint&apos;s office</span>
+                      <br />
+                      <span className="text-[#EB89B5] font-semibold">(CC hereducationrequired@gmail.com)</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-[#EB89B5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <div>
+                      <span>Write emails to teachers, principals and other faculty at your local high schools</span>
+                      <br />
+                      <span className="text-[#EB89B5] font-semibold">(CC hereducationrequired@gmail.com)</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-[#EB89B5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span>Post about us on Front Porch Forum, Instagram, and write op eds</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-[#EB89B5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span>Inform reporters about our cause</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-[#EB89B5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span>Attend our events and contact us at <a href="mailto:hereducationrequired@gmail.com" className="text-[#EB89B5] hover:text-[#C76B99] underline">hereducationrequired@gmail.com</a> if you have ideas or questions</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -191,93 +262,43 @@ export default function Involved() {
           </div>
         </section>
 
-        {/* Contact Information */}
+        {/* Club Members Message and Photo */}
         <section className="mb-16">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">How to Join</h2>
-            <div className="grid grid-cols-2 gap-3 md:gap-8">
-              <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Get Started Today</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-pink-600 text-sm font-bold">1</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">Attend a Meeting</h4>
-                      <p className="text-gray-600">Come to our weekly meetings to learn more about our activities and meet current members.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-pink-600 text-sm font-bold">2</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">Sign Up</h4>
-                      <p className="text-gray-600">Complete our membership form and join our email list for updates and announcements. (student run)</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-pink-600 text-sm font-bold">3</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">Get Active</h4>
-                      <p className="text-gray-600">Participate in events by checking the calendar and RVSP to events</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-pink-600 text-sm font-bold">4</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">Fill out Join Now form!</h4>
-                      <p className="text-gray-600">Complete our online application form to officially become a member</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Us</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span className="text-gray-600">hereducationrequired@gmail.com</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span className="text-gray-600">CVU Room 134</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-gray-600">Wednesdays at 10:00 AM</span>
-                  </div>
-                </div>
-              </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-6">
+              <p className="text-lg md:text-xl text-gray-700 text-center leading-relaxed">
+                We club members ask that you hear our mission, and that you consider it <span className="text-[#EB89B5] font-bold">your responsibility to push forward change</span>. Write emails, attend events, and support not only us but also your daughters, sisters, mothers, and the women around you. They deserve education and a full understanding of their rights as women.
+              </p>
+            </div>
+            <div className="max-w-3xl mx-auto">
+              <Image
+                src="/clurb.HEIC"
+                alt="HER Club members"
+                width={800}
+                height={600}
+                className="w-full h-auto rounded-lg object-cover shadow-lg"
+                style={{ aspectRatio: '4/3' }}
+              />
             </div>
           </div>
         </section>
 
-        {/* Petition Notice */}
-        <div className="mb-12 p-4 md:p-6 bg-[#FFD7E9] border-l-4 border-[#EB89B5] rounded-r-lg">
-          <div className="flex items-center gap-2 md:gap-3">
-            <svg className="w-5 h-5 md:w-6 md:h-6 text-[#EB89B5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-            </svg>
-            <div>
-              <p className="text-[#EB89B5] font-semibold text-sm md:text-base">
-                Please sign our petition in support of education! Scroll up to find the petition button at the top of this page.
-              </p>
+        {/* Email List Signup */}
+        <section className="mb-16">
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <p className="text-lg md:text-xl text-gray-700 text-center leading-relaxed mb-6">
+              Join our student written email list that keeps members informed on actions and events taking place.
+            </p>
+            <div className="flex justify-center">
+              <button 
+                onClick={() => setShowJoinForm(true)}
+                className="inline-block bg-[#EB89B5] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-lg hover:shadow-xl"
+              >
+                Join Now
+              </button>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Call to Action */}
         <div className="text-center">
@@ -292,12 +313,6 @@ export default function Involved() {
             >
               View Upcoming Events
             </Link>
-            <button 
-              onClick={() => setShowJoinForm(true)}
-              className="inline-block bg-[#EB89B5] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#C76B99] transition-colors shadow-lg hover:shadow-xl"
-            >
-              Join Now
-            </button>
           </div>
         </div>
       </main>
