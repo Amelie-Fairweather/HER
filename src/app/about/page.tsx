@@ -103,10 +103,10 @@ export default function About() {
                 />
               </div>
               
-              {/* Event 2 */}
+              {/* Image 08 */}
               <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <Image
-                  src="/event2.jpg"
+                  src="/08.jpg"
                   alt="HER Club event photo"
                   fill
                   className="object-cover"
