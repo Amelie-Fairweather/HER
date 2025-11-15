@@ -176,6 +176,54 @@ export default function About() {
           </div>
         </section>
 
+        {/* Why was this club founded? Section */}
+        <section className="mb-16">
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Why was this club founded?</h2>
+            <div className="text-lg text-gray-700 leading-relaxed space-y-4">
+              <p>
+                Hi! My name is Amelie Fairweather, and I am a junior at CVU, as well as the leader and founder of HER. I would love to share what inspired me to found this movement, and this story takes place all the way back during my freshman year.
+              </p>
+              <p>
+                During the last two weeks of the school year, my freshman social studies teacher decided we would do crash courses on different minorities not traditionally covered in the curriculum. We covered disabled rights, the LGBTQ movement, various religious groups, and on the final day, we began class by learning about the Asian American experience. It occurred to me, as he announced the topic, that we hadn&apos;t covered women&apos;s rights, and when I really reflected on it, I wondered: When have we covered women&apos;s rights? I knew what a suffragette was, but only because in third grade my dad had made me watch a movie about the early civil rights movements. I remembered three things: the main character was Helena Bonham Carter (who I loved), she was a suffragette, and as a suffragette, their primary responsibility was to explode mailboxes.
+              </p>
+              <p>
+                So I raised my hand, and I asked my teacher that very question: &quot;When do we learn about women&apos;s history?&quot; He responded promptly: &quot;Oh, you don&apos;t learn about that.&quot; A few minutes later, he apologized, and instead said: &quot;I mean to say, I don&apos;t believe you learn about it, but if you did, that would probably be during AP Government.&quot;
+              </p>
+              <p>
+                <span className="font-bold text-[#EB89B5]">It took me a few more questions to understand that this meant women&apos;s history was entirely optional.</span> If kids did elect to take AP GOV, that wouldn&apos;t be until their junior or senior year, and that class still did not include the rights of women only 100 years ago. This class did not include the suffrage movement, it did not include the second wave of activism in the &apos;70s, and it did not include the rights of women today.
+              </p>
+              <p>
+                After he told me this, I wasn&apos;t sure what to do. And when I reflect on this, I realize that it was because I didn&apos;t believe in the importance of women&apos;s history. I didn&apos;t believe that it was necessary education because I didn&apos;t understand what women had to endure and overcome, and where we were as a society less than 100 years ago. Prior to that, when my mom asked me if I still thought sexism was relevant today, I had gotten mad at her outdated thinking. So what I did was nothing.
+              </p>
+              <p>
+                Over a year later, the election happened, and the entire attitude of CVU changed. All of a sudden, everyone&apos;s political opinions became a focal point of conversation in the hallways, and I began to realize how relevant women&apos;s rights are today. Before I tell the next story, I should be clear: this club is not seeking to take political stances or become politically involved in any way. <span className="font-bold text-[#EB89B5]">We are hoping instead that students have enough unbiased education and background so that they can make these stances for themselves—regardless of the media, social media, our parents, and what the students around us say.</span>
+              </p>
+              <p>
+                We also hope that all students understand the incredible work of generations of women to give us the rights we have today. Young girls deserve role models, and young boys need respect for the women around them.
+              </p>
+              <p>
+                That day after the election, there was a debate at CVU led by faculty, discussing some of the most pressing issues of the day. We broke off into groups, and as I had somewhat anticipated, the first question was: Do you think a woman has a right to an abortion?
+              </p>
+              <p>
+                I knew my stance, and I was used to surrounding myself with others who shared my views, so when I began articulating my beliefs, I wasn&apos;t prepared for the objections I would receive. A boy in our circle disagreed with me, and I felt myself tearing up as we argued, because even as I tried to speak, I realized I knew nothing beyond my personal beliefs. I realized that, truthfully, I had nothing to say. I had no education around the topic, only my own experience as a woman. I had no idea why abortion had been legalized, what it meant to be banned, or how it affected others around me. And the worst part of it was, that boy who so strongly disagreed with me, who so easily condemned millions of women, he had no understanding of the history either.
+              </p>
+              <p>
+                How can we, as students, be asked such a question when we have no understanding of its implications? That&apos;s what I left the debate thinking. How could I reject that boy&apos;s beliefs so quickly, without any understanding of the topic? Worst of all, how could we leave education concerning something so tangible as my own bodily autonomy to hearsay? I couldn&apos;t focus for the rest of the day; all I could think of was the constant derogatory comments, slurs, and whispers about the girls around me, and how they had become so normalized.
+              </p>
+              <p>
+                How I got upset when my mom asked me if I thought sexism was still relevant, and how I had spoken with such vindication during the debate, when really, I hadn&apos;t said anything. Opinion after opinion, but never fact.
+              </p>
+              <p>
+                <span className="font-bold text-[#EB89B5]">Education is not an opinion; history should never be biased. Yet that is what women&apos;s history has become when we leave it as optional, when we teach it too late. Ask yourself: does your daughter, your sister, know her rights?</span> Does she know what it means to be discriminated against, and does she know how to speak up for herself? I would guess the answer is no. I certainly didn&apos;t know during that debate. Learning about my history has been empowering in so many ways. I hope everyone is incredibly proud of themselves for being present in this room tonight and continuing the hard-won legacy of generations of women before. I wish I could go back to that debate and ask that boy why—not what, but why—he believed what he did. I wish I had learned about women&apos;s history in school. I wish I could stand here and speak knowing more about it than I do.
+              </p>
+              <p className="font-semibold">
+                I founded this club because most of all, students deserve this education, and this education deserves being required. Women&apos;s history is American history, it is human history, and it is our history. <span className="font-bold text-[#EB89B5]">It is now time for us to use our voices, so generations of girls after us know how to as well.</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* What We Do Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">What We Do</h2>
